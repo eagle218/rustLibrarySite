@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <style>
+        .form-label {
+            color: white
+        }
+        
+         /* Дополнительные стили для формы */
+         .form-container {
+            max-width: 400px;
+            margin: 50px auto 0 auto; /* Устанавливаем отступ сверху */
+            padding: 20px;
+            border-radius: 8px;
+            background: linear-gradient(to bottom right, #333, #666);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Стили для текста и элементов формы на темном фоне */
+        .form-label,
+        .form-control,
+        .btn-primary {
+            color: #fff;
+        }
+    </style>
+</head>
+<body style="background-color: #222;">
+    <header>
+    </header>
+    
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
